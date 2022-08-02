@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    height: 100vh;
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.main-body{
+    width: 95%;
+    text-align: center;
+    border-radius: 25px;
+    background: #2c3e50;
+    overflow: hidden;
+    height: 95%;
+    left: 20px;
+    align-items: center;
+}
+.contacts{
+    float: left;
+    width: 250px;
+    height: 100%;
+    background: #34495e;
+}
+.h2{
+    width: 100%;
+    padding-left: 200px;
+    background: #1a2530;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+}
+.titre{
+    width: 200px;
+    
+    border-radius: 25px;
+    background: #2ecc71;
+}
+.col_gauche h3{
+    color: white;
+}
+h1{
+    padding-top: 20px;
+    padding-bottom: 2px;
+    color: white;
+}
+.discussions{
+    color: white;
+    
+}
+
+.logout{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid red;
+    padding: 14px 30px;
+    outline: none;
+    color: red;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    width: 180px;
+    
+}
+.settings{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 30px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    width: 180px;
+}
+.logout:hover{
+    background: red;
+    color: white;
+}
+.settings:hover{
+    background: #2ecc71;
+}
+
+.search:hover, .search:focus{
+    width: 370px;
+    border-color: #2ecc71;
+}
+.recherche{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid  #2ecc71;
+    padding: 14px 30px;
+    width: 180px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.recherche:focus{
+    animation: blinking 1.5s infinite;
+}
+
+@keyframes blinking{
+    25%{
+        border: 2px solid #2ecc71;
+    }
+    50%{
+        border: 2px solid #34495e;
+    }
+    75%{
+        border: 2px solid #2ecc71;
+    }
+    100%{
+        border: 2px solid #34495e;
+    }
+}

@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    height: 100vh;
+    background: url(LowPolyBackground.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.main-body{
+    width: 90%;
+    text-align: center;
+    border-radius: 25px;
+    background: #2c3e50;
+    overflow: hidden;
+    height: 90%;
+    filter: drop-shadow(15px 15px 15px black);
+}
+.col-left{
+    float:left;  
+    background:#2c3e50; 
+    width:15%; 
+    height:100%; 
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.col-right{
+    float:right; 
+    background:#34495e; 
+    width: 85%;
+    height:100%; 
+    position: relative;
+    
+}
+.input{
+    float: right;
+    background: #95a5a6;
+    width: 85%; 
+    position: absolute;
+    bottom: 0;
+    height: 10%;
+    margin: 7px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    margin-right: 7px;
+    animation: 1s ease-out 0s 1 SliderInput;
+    
+}
+@keyframes SliderInput{
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.btn{
+    background-color: #7f8c8d;
+    border: none;
+    color: white;
+    padding: 16px 16px;
+    font-size: 20px; 
+    cursor: pointer;
+    border-radius: 30px;
+}
+.btn-send{
+    background-color: #7f8c8d;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    font-size: 20px; 
+    cursor: pointer;
+    border-radius: 30px;
+}
+.btn-send:hover{
+    background-color: #2ecc71;
+}
+.reglages {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.logout {
+    width: 90%;
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.logout:hover{
+    background: #2ecc71;
+}
+.reglages:hover{
+    background: #2ecc71;
+}
